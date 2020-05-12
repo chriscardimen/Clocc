@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/clock_image"
+        android:layout_width="246dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transparent_icon" />
+
+    <TextView
+        android:id="@+id/clockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/clockTime"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:fontFamily="@font/roboto_thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clockTime"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/database_button"
+        style="@android:style/Widget.Button"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="72dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto_thin"
+        android:freezesText="false"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="onButtonTap"
+        android:text="@string/Database"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clock_button"
+        style="@android:style/Widget.Button"
+        android:layout_width="156dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto_thin"
+        android:freezesText="false"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="onButtonTap"
+        android:text="@string/Clock"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/serial_num"
+        android:layout_width="156dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="96dp"
+        android:editable="true"
+        android:ems="10"
+
+        android:enabled="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_thin"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:hint="Serial #"
+        android:textAllCaps="false"
+        android:textColor="#AD5A5959"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="56dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto_thin"
+        android:onClick="onButtonTap"
+        android:text="Go"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarTrackVertical="?android:attr/scrollbarThumbVertical"
+            android:scrollbars="horizontal|vertical"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:fontFamily="@font/roboto_light" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

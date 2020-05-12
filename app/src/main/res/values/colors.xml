@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Status">#efd2d2d2</color>
+    <color name="background_light">#ff9a9a</color>
+    <color name="reddy">#f88989</color>
+    <color name="red2">#a8f88989</color>
+    <color name="bluey">#99F0E9</color>
+</resources>
