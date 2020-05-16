@@ -127,7 +127,7 @@ public class MainActivity<Sender> extends AppCompatActivity {
         String am_pm = "";
         if (am_or_pm == 0) {
             am_pm = "am";
-            if (hours == 0) {
+            if (time.getHours() == 0) {
                 hours = 12;
             } else {
                 hours = time.getHours();
@@ -136,7 +136,7 @@ public class MainActivity<Sender> extends AppCompatActivity {
             seconds = time.getSeconds();
         } else {
             am_pm = "pm";
-            if (hours == 12) {
+            if (time.getHours() == 12) {
                 hours = 12;
             } else {
                 hours = (time.getHours() - 12);
