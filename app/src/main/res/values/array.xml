@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="spinnerItems">
+        <item>Ball</item>
+        <item>Elgin</item>
+        <item>Hamilton</item>
+        <item>Hampden</item>
+        <item>Illinois</item>
+        <item>Rockford</item>
+        <item>Waltham</item>
+    </string-array>
+</resources>
