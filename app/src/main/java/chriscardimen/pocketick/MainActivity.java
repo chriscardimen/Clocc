@@ -338,7 +338,7 @@ public class MainActivity<Sender> extends AppCompatActivity {
                 } else {
                     to_send_to_channel += "";
                     String information_we_want = watch_database.substring(indexer,
-                            watch_database.indexOf("Data Research:"));
+                            watch_database.indexOf("Data Verification Reports"));
                     for (int x = 0; x < information_we_want.indexOf("Data Research")
                             || x <= information_we_want.indexOf("U.S.") || x<= information_we_want.indexOf("Railroad Grade"); ++x) {
                         char current = information_we_want.charAt(x);
@@ -558,8 +558,7 @@ public class MainActivity<Sender> extends AppCompatActivity {
                 "into this application. \n\n" +
                 "I, Chris Cardimen, do not posses, nor do I attempt to display, any of this data as my own. " +
                 "\n\nMy contact information is as follows - I would be more than happy to address any questions and/or inquiries." +
-                "\n\nEmail: christophercardimen@gmail.com" +
-                "\nPhone: (586)-337-2305" +
+                "\n\nEmail: 74209738+chriscardimen@users.noreply.github.com" +
                 "\n\nThank you so much for using this app!\nHave a fantastic day :)");
         data_view.setVisibility(View.VISIBLE);
         clockTime.setVisibility(View.INVISIBLE);
