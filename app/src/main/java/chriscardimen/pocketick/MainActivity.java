@@ -558,8 +558,7 @@ public class MainActivity<Sender> extends AppCompatActivity {
                 "into this application. \n\n" +
                 "I, Chris Cardimen, do not posses, nor do I attempt to display, any of this data as my own. " +
                 "\n\nMy contact information is as follows - I would be more than happy to address any questions and/or inquiries." +
-                "\n\nEmail: christophercardimen@gmail.com" +
-                "\nPhone: (586)-337-2305" +
+                "\n\nEmail: 74209738+chriscardimen@users.noreply.github.com" +
                 "\n\nThank you so much for using this app!\nHave a fantastic day :)");
         data_view.setVisibility(View.VISIBLE);
         clockTime.setVisibility(View.INVISIBLE);
