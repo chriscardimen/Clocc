@@ -338,7 +338,7 @@ public class MainActivity<Sender> extends AppCompatActivity {
                 } else {
                     to_send_to_channel += "";
                     String information_we_want = watch_database.substring(indexer,
-                            watch_database.indexOf("Data Research:"));
+                            watch_database.indexOf("Data Verification Reports"));
                     for (int x = 0; x < information_we_want.indexOf("Data Research")
                             || x <= information_we_want.indexOf("U.S.") || x<= information_we_want.indexOf("Railroad Grade"); ++x) {
                         char current = information_we_want.charAt(x);
