@@ -1,4 +1,4 @@
-package chriscardimen.clocc;
+package chriscardimen.pocketick;
 
 import android.graphics.Color;
 import android.graphics.PixelFormat;

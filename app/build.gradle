@@ -3,10 +3,10 @@ apply plugin: 'com.android.application'
 android {
     compileSdk 34
     defaultConfig {
-        applicationId 'chriscardimen.clocc'
+        applicationId 'chriscardimen.pocketick'
         minSdkVersion 26
         targetSdkVersion 34
-        versionCode 10
+        versionCode 11
         versionName "2.5.1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -18,9 +18,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = 1.7
-        targetCompatibility = 1.7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
+
+//    kotlinOptions {
+//        jvmTarget = "1.8"
+//    }
 
     android {
         packagingOptions {
@@ -38,7 +42,7 @@ android {
         }
 
     }
-    namespace 'chriscardimen.clocc'
+    namespace 'chriscardimen.pocketick'
 }
 
 dependencies {
@@ -46,7 +50,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     // jsoup HTML parser library @ https://jsoup.org/
-    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'org.jsoup:jsoup:1.17.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
